@@ -26,7 +26,9 @@ print(list(plural))
 
 # other built-in functions
 length = list(map(len, flowers))
+print(length)
 
 # lambda functions
 nums = [1, 2, 3, 4, 5]
 doubled = list(map(lambda num: num * 2, nums))
+print(doubled)

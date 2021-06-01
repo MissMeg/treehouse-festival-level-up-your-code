@@ -10,13 +10,18 @@ plants = zip(flowers, trees)
 print(plants)
 print(list(plants))
 
+# Loop
+for plant in zip(flowers, trees):
+    print(plant)
+
 # Unequal length
 cats = ['Big Unit', 'FuzzFace', 'Lumberjack']
 dogs = ['Jethro', 'Harley', 'Pyrros', 'Jordi']
 treehouse_pets = zip(cats, dogs)
+print(list(treehouse_pets))
 
 
 # double trouble loops
-for dog, cat in treehouse_pets:
+for cat, dog in zip(cats, dogs):
     print(f'A cat named {cat}')
     print(f'A dog named {dog}')
