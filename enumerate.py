@@ -15,11 +15,11 @@ for flower in flowers:
 
 # enter enumerate()
 for count, flower in enumerate(flowers):
-    print(count, flowers)
+    print(count, flower)
 
 # can't access
 enumerate(flowers)[0]
 
 # choose starting point
 for count, flower in enumerate(flowers, start=1):
-    print(count, flowers)
+    print(count, flower)
