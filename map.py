@@ -7,7 +7,7 @@ flowers = ['sunflower', 'daisy', 'rose', 'peony']
 plural = []
 for flower in flowers:
     if flower[-1] == 'y':
-        plural.append(flower + 'ies')
+        plural.append(flower[:(len(flower) -1)] + 'ies')
     else:
         plural.append(flower + 's')
 print(plural)
@@ -16,12 +16,13 @@ print(plural)
 # map()
 def pluralize(word):
     if word[-1] == 'y':
-        return word + 'ies'
+        return word[:(len(word) -1)] + 'ies'
     else:
         return word + 's'
 
 
 plural = map(pluralize, flowers)
+print(plural)
 print(list(plural))
 
 # other built-in functions

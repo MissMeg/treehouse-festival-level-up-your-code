@@ -19,6 +19,7 @@ for count, flower in enumerate(flowers):
 
 # can't access
 enumerate(flowers)[0]
+print(list(enumerate(flowers)))
 
 # choose starting point
 for count, flower in enumerate(flowers, start=1):
